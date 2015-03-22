@@ -1,0 +1,33 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class D006 {
+
+	public static void main(String[] args) throws IOException {
+
+		InputStreamReader isr = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(isr);
+
+		String line = br.readLine();
+		String[]array = line.split(" ");
+		//int iに数値を入れる
+		int i = Integer.parseInt(array[0]);
+		//Stringｓに距離の単位を入れる
+		String s = (array[1]);
+    
+		switch(s){
+		case("km"):
+		i *= 1000;
+		case("m"):
+			i *= 100;
+		case("cm"):
+			i *= 10;
+		break;
+		}
+		System.out.println(i);
+
+	}
+
+}
