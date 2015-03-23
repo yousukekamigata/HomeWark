@@ -17,8 +17,8 @@ public class D005 {
 
 		//文字列を作成
 		StringBuilder sb = new StringBuilder();
-		m = 5;
-		for(int i = 1; i < 10; i++){
+		//mにnを10回足し続ける
+		for(int i = 1; i <= 10; i++){
 			if(i !=1){
 				sb.append(" ");
 
