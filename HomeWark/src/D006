@@ -16,8 +16,9 @@ public class D006 {
 		int i = Integer.parseInt(array[0]);
 		//Stringｓに距離の単位を入れる
 		String s = (array[1]);
-    
+    		//距離の単位が("")だった場合
 		switch(s){
+		//i に1000を乗算しさらに1000乗算=1000000
 		case("km"):
 		i *= 1000;
 		case("m"):
